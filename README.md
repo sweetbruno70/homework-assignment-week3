@@ -9,7 +9,7 @@ in the UC Berkley's Week 3, Day 3 Zoom presentation. To gain understanding of ot
 While their codes gave me some understanding of writing codes, they were quite complicated for my current grasp of the subject. I also spent more than 10 hours watching
 youtube videos and Google searching concepts to make sense of the subject, but my understanding is so limited which caused more frustration.
 
-![password-generator] (https://github.com/sweetbruno70/homework-assignment-week3/blob/main/password-generator.png)
+![img password-generator] (https://github.com/sweetbruno70/homework-assignment-week3/blob/main/password-generator.png)
 
 
 
