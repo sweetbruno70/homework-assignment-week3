@@ -22,18 +22,14 @@ if (!includeLowerCase && !includeUpperCase && !includeNumbers && !includeSpecial
   return "";
 }
 
-
   //Generate a random password
 let passwordCharacters = [];
 var specialCharacters = "<[{>}]&*@#!%$?";
 var smallLetters = "qwertyuioplkjhgfdsamnbvcxz";
 var capitalLetters = "POIUYTREWQASDFGHJKLMNBVCXZ";
 var numbers = "1092837465";
-var smallSpecial = smallletters.concat(specialCharacters);
-var smallCAPS = smallletters.concat(capitalLetters);
 
-
-//TODO handle character types
+//handle character types
 if (includeSpecialCharacters) {
   passwordCharacters = passwordCharacters.concat(specialCharacters.split(""));
 }
@@ -45,14 +41,9 @@ if (includeLowerCase) {
 if (includeUpperCase) {
     passwordCharacters = passwordCharacters.concat(capitalLetters.split(""));
 }
+
 if (includeNumbers) {
   passwordCharacters = passwordCharacters.concat(numbers.split(""));
-}
-if (includeSpecialCharacters && includeLowerCase) {
-  passwordCharacters = passwordCharacters.concat(smallSpecial.split(""));
-}
-if (includeSpecialCharacters && includeLowerCase) {
-  passwordCharacters = passwordCharacters.concat(smallCaps.split(""));
 }
 
 let results = "";
