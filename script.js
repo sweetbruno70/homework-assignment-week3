@@ -30,6 +30,7 @@ var smallLetters = "qwertyuioplkjhgfdsamnbvcxz";
 var capitalLetters = "POIUYTREWQASDFGHJKLMNBVCXZ";
 var numbers = "1092837465";
 var smallSpecial = smallletters.concat(specialCharacters);
+var smallCAPS = smallletters.concat(capitalLetters);
 
 
 //TODO handle character types
@@ -48,7 +49,10 @@ if (includeNumbers) {
   passwordCharacters = passwordCharacters.concat(numbers.split(""));
 }
 if (includeSpecialCharacters && includeLowerCase) {
-  passwordCharacters = passwordCharacters.concat(smallSpecial.split(""))
+  passwordCharacters = passwordCharacters.concat(smallSpecial.split(""));
+}
+if (includeSpecialCharacters && includeLowerCase) {
+  passwordCharacters = passwordCharacters.concat(smallCaps.split(""));
 }
 
 let results = "";
