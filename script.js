@@ -11,8 +11,8 @@ function generatePassword() {
   }
 
   //Ask the user for which characters to include
-var includeLowerCase = confirm("Do you want to include capital letters in the password?");
-var includeUpperCase = confirm("Do you want to include small letters in the password?");
+var includeLowerCase = confirm("Do you want to include small letters in the password?");
+var includeUpperCase = confirm("Do you want to include capital letters in the password?");
 var includeNumbers = confirm("Do you want to include numbers in the password?");
 var includeSpecialCharacters = confirm("Do you want to include special characters in the password?");
 
@@ -25,11 +25,26 @@ if (!includeLowerCase && !includeUpperCase && !includeNumbers && !includeSpecial
 
   //Generate a random password
 let passwordCharacters = [];
-const specialCharacters = "&*@#!%$?";
+var specialCharacters = "<[{>}]&*@#!%$?";
+var smallLetters = "qwertyuioplkjhgfdsamnbvcxz";
+var capitalLetters = "POIUYTREWQASDFGHJKLMNBVCXZ";
+var numbers = "1092837465";
 
-//TODO handle other character types
+
+//TODO handle character types
 if (includeSpecialCharacters) {
   passwordCharacters = passwordCharacters.concat(specialCharacters.split(""));
+}
+
+if (includeLowerCase) {
+  passwordCharacters = passwordCharacters.concat(smallLetters.split(""));
+}
+
+if (includeUpperCase) {
+    passwordCharacters = passwordCharacters.concat(capitalLetters.split(""));
+}
+if (includeNumbers) {
+  passwordCharacters = passwordCharacters.concat(numbers.split(""));
 }
 
 let results = "";
