@@ -11,5 +11,5 @@ youtube videos and Google searching concepts to make sense of the subject, but m
 
 ![img password-generator](https://github.com/sweetbruno70/homework-assignment-week3/blob/main/password-generator.png)
 
-
+webpage URL: https://sweetbruno70.github.io/homework-assignment-week3/
 
