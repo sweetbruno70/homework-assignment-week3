@@ -29,6 +29,7 @@ var specialCharacters = "<[{>}]&*@#!%$?";
 var smallLetters = "qwertyuioplkjhgfdsamnbvcxz";
 var capitalLetters = "POIUYTREWQASDFGHJKLMNBVCXZ";
 var numbers = "1092837465";
+var smallSpecial = smallletters.concat(specialCharacters);
 
 
 //TODO handle character types
@@ -45,6 +46,9 @@ if (includeUpperCase) {
 }
 if (includeNumbers) {
   passwordCharacters = passwordCharacters.concat(numbers.split(""));
+}
+if (includeSpecialCharacters && includeLowerCase) {
+  passwordCharacters = passwordCharacters.concat(smallSpecial.split(""))
 }
 
 let results = "";
